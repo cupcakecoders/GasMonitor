@@ -9,6 +9,8 @@
       "GasMonitor/1.0.0": {
         "dependencies": {
           "AWSSDK.S3": "3.5.0-beta",
+          "AWSSDK.SQS": "3.5.0-beta",
+          "AWSSDK.SimpleNotificationService": "3.5.0-beta",
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
@@ -29,6 +31,28 @@
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.5.0.0"
+          }
+        }
+      },
+      "AWSSDK.SimpleNotificationService/3.5.0-beta": {
+        "dependencies": {
+          "AWSSDK.Core": "3.5.0-beta"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.5.0.0"
+          }
+        }
+      },
+      "AWSSDK.SQS/3.5.0-beta": {
+        "dependencies": {
+          "AWSSDK.Core": "3.5.0-beta"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SQS.dll": {
             "assemblyVersion": "3.3.0.0",
             "fileVersion": "3.5.0.0"
           }
@@ -63,6 +87,20 @@
       "sha512": "sha512-D8YSmwhaRxQ2w38Z1NPtWU3AsLhyTZrQo+CxAKGH8VaSjd6Fbn3ip2uRt50o+gaJxQ+SOdZeebh91VqcHEgLqg==",
       "path": "awssdk.s3/3.5.0-beta",
       "hashPath": "awssdk.s3.3.5.0-beta.nupkg.sha512"
+    },
+    "AWSSDK.SimpleNotificationService/3.5.0-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FcJq8L0p9qx46/hrS805hvgrm7h+WGc3dW5KokbEiAAbeJ7PdK8pW7HcShAr0HFbzai0JXCJP3TAIulYzQZaUg==",
+      "path": "awssdk.simplenotificationservice/3.5.0-beta",
+      "hashPath": "awssdk.simplenotificationservice.3.5.0-beta.nupkg.sha512"
+    },
+    "AWSSDK.SQS/3.5.0-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8dl/qIcE3x6ANlPR7pxgnaGLLSJUNLJ1I3NnvlFGoOzjjt4hlmppKJ79LNLxbKVjGKLTlC9mn/H2s3YC0tDF1g==",
+      "path": "awssdk.sqs/3.5.0-beta",
+      "hashPath": "awssdk.sqs.3.5.0-beta.nupkg.sha512"
     },
     "Newtonsoft.Json/12.0.3": {
       "type": "package",

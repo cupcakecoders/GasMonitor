@@ -13,3 +13,5 @@ C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1
 C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.dll
 C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.pdb
 C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\AWSSDK.SQS.dll
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\AWSSDK.SimpleNotificationService.dll

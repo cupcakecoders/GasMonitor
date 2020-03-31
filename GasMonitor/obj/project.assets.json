@@ -23,6 +23,30 @@
           "lib/netstandard2.0/AWSSDK.S3.dll": {}
         }
       },
+      "AWSSDK.SimpleNotificationService/3.5.0-beta": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.5.0-beta, 3.6.0-beta)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll": {}
+        }
+      },
+      "AWSSDK.SQS/3.5.0-beta": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.5.0-beta, 3.6.0-beta)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+        }
+      },
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
@@ -87,6 +111,60 @@
         "tools/uninstall.ps1"
       ]
     },
+    "AWSSDK.SimpleNotificationService/3.5.0-beta": {
+      "sha512": "FcJq8L0p9qx46/hrS805hvgrm7h+WGc3dW5KokbEiAAbeJ7PdK8pW7HcShAr0HFbzai0JXCJP3TAIulYzQZaUg==",
+      "type": "package",
+      "path": "awssdk.simplenotificationservice/3.5.0-beta",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SimpleNotificationService.CodeAnalysis.dll",
+        "awssdk.simplenotificationservice.3.5.0-beta.nupkg.sha512",
+        "awssdk.simplenotificationservice.nuspec",
+        "lib/net35/AWSSDK.SimpleNotificationService.dll",
+        "lib/net35/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net35/AWSSDK.SimpleNotificationService.xml",
+        "lib/net45/AWSSDK.SimpleNotificationService.dll",
+        "lib/net45/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net45/AWSSDK.SimpleNotificationService.xml",
+        "lib/netstandard1.3/AWSSDK.SimpleNotificationService.dll",
+        "lib/netstandard1.3/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netstandard1.3/AWSSDK.SimpleNotificationService.xml",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.SQS/3.5.0-beta": {
+      "sha512": "8dl/qIcE3x6ANlPR7pxgnaGLLSJUNLJ1I3NnvlFGoOzjjt4hlmppKJ79LNLxbKVjGKLTlC9mn/H2s3YC0tDF1g==",
+      "type": "package",
+      "path": "awssdk.sqs/3.5.0-beta",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SQS.CodeAnalysis.dll",
+        "awssdk.sqs.3.5.0-beta.nupkg.sha512",
+        "awssdk.sqs.nuspec",
+        "lib/net35/AWSSDK.SQS.dll",
+        "lib/net35/AWSSDK.SQS.pdb",
+        "lib/net35/AWSSDK.SQS.xml",
+        "lib/net45/AWSSDK.SQS.dll",
+        "lib/net45/AWSSDK.SQS.pdb",
+        "lib/net45/AWSSDK.SQS.xml",
+        "lib/netstandard1.3/AWSSDK.SQS.dll",
+        "lib/netstandard1.3/AWSSDK.SQS.pdb",
+        "lib/netstandard1.3/AWSSDK.SQS.xml",
+        "lib/netstandard2.0/AWSSDK.SQS.dll",
+        "lib/netstandard2.0/AWSSDK.SQS.pdb",
+        "lib/netstandard2.0/AWSSDK.SQS.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Newtonsoft.Json/12.0.3": {
       "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
@@ -122,6 +200,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AWSSDK.S3 >= 3.5.0-beta",
+      "AWSSDK.SQS >= 3.5.0-beta",
+      "AWSSDK.SimpleNotificationService >= 3.5.0-beta",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
@@ -161,6 +241,14 @@
       "netcoreapp3.1": {
         "dependencies": {
           "AWSSDK.S3": {
+            "target": "Package",
+            "version": "[3.5.0-beta, )"
+          },
+          "AWSSDK.SQS": {
+            "target": "Package",
+            "version": "[3.5.0-beta, )"
+          },
+          "AWSSDK.SimpleNotificationService": {
             "target": "Package",
             "version": "[3.5.0-beta, )"
           },

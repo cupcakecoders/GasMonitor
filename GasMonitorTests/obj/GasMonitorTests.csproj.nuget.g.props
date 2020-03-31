@@ -21,6 +21,8 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\KanDil\.nuget\packages\awssdk.core\3.5.0-beta</PkgAWSSDK_Core>
+    <PkgAWSSDK_SQS Condition=" '$(PkgAWSSDK_SQS)' == '' ">C:\Users\KanDil\.nuget\packages\awssdk.sqs\3.5.0-beta</PkgAWSSDK_SQS>
+    <PkgAWSSDK_SimpleNotificationService Condition=" '$(PkgAWSSDK_SimpleNotificationService)' == '' ">C:\Users\KanDil\.nuget\packages\awssdk.simplenotificationservice\3.5.0-beta</PkgAWSSDK_SimpleNotificationService>
     <PkgAWSSDK_S3 Condition=" '$(PkgAWSSDK_S3)' == '' ">C:\Users\KanDil\.nuget\packages\awssdk.s3\3.5.0-beta</PkgAWSSDK_S3>
   </PropertyGroup>
 </Project>

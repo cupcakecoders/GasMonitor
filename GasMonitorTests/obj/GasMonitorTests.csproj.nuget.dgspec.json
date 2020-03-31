@@ -44,6 +44,14 @@
               "target": "Package",
               "version": "[3.5.0-beta, )"
             },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.5.0-beta, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.5.0-beta, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.4.0, )"
@@ -113,6 +121,14 @@
         "netcoreapp3.1": {
           "dependencies": {
             "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.5.0-beta, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.5.0-beta, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
               "target": "Package",
               "version": "[3.5.0-beta, )"
             },
