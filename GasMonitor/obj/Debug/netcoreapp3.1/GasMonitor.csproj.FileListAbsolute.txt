@@ -1,0 +1,15 @@
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\GasMonitor.exe
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\GasMonitor.deps.json
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\GasMonitor.runtimeconfig.json
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\GasMonitor.runtimeconfig.dev.json
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\GasMonitor.dll
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\GasMonitor.pdb
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.csprojAssemblyReference.cache
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.AssemblyInfoInputs.cache
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.AssemblyInfo.cs
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.csproj.CopyComplete
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.dll
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\obj\Debug\netcoreapp3.1\GasMonitor.pdb
+C:\Users\KanDil\Documents\training\GasMonitor\GasMonitor\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
