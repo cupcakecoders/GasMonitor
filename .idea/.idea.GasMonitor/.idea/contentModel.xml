@@ -16,10 +16,11 @@
     <e p="C:\Users\KanDil\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_GasMonitor.645188492.00" t="ExcludeRecursive" />
     <e p="C:\Users\KanDil\Documents\training\GasMonitor" t="IncludeFlat">
       <e p="GasMonitor" t="IncludeRecursive">
-        <e p="AmazonService.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="GasMonitor.csproj" t="IncludeRecursive" />
         <e p="Location.cs" t="Include" />
+        <e p="LocationService.cs" t="Include" />
+        <e p="MessageProcessor.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">

@@ -18,7 +18,7 @@ namespace GasMonitor
         public async Task<string> CreateSqsQueue()
         {
             CreateQueueRequest createQueueRequest = new CreateQueueRequest();
-            createQueueRequest.QueueName = "LocationSQSQueue";
+            createQueueRequest.QueueName = "KKLocationSQSQueue";
 
             var createQueueResponse = _sqsClient.CreateQueueAsync(createQueueRequest);
             var queueUrl = createQueueResponse.Result.QueueUrl;

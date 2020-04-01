@@ -12,12 +12,12 @@ using Newtonsoft.Json;
 
 namespace GasMonitor
 {
-    public static class AmazonService
+    public static class LocationService
     {
         private static readonly string BucketName = Environment.GetEnvironmentVariable("S3Bucket");
         private static readonly string KeyName = "locations.json";
         private static RegionEndpoint BucketRegion = RegionEndpoint.EUWest2;
-        private static readonly IAmazonS3 Client = new AmazonS3Client(Environment.GetEnvironmentVariable("S3AccessKey"), Environment.GetEnvironmentVariable("S3SecretKey"), BucketRegion);
+        private static readonly IAmazonS3 Client = new AmazonS3Client(Environment.GetEnvironmentVariable("AWS_ACCESS_KEY_ID"), Environment.GetEnvironmentVariable("AWS_SECRET_KEY_ID"), BucketRegion);
         
         public static async Task<List<Location>> ReadObjectDataAsync()
         {

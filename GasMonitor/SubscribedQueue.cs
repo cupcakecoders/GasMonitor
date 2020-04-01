@@ -14,7 +14,6 @@ namespace GasMonitor
         {
             _sqsQueue = sqsQueue;
             _snsService = snsService;
-
             QueueUrl = sqsQueue.CreateSqsQueue().Result;
             _subscriptionArn = _snsService.SubscribeToSnsTopic(QueueUrl).Result;
         }
