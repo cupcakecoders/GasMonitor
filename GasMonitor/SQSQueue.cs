@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Amazon.Runtime.Internal;
+using Amazon.Runtime.SharedInterfaces;
+using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
 using Amazon.SQS.Model;
 using Amazon.SQS;
@@ -22,10 +25,15 @@ namespace GasMonitor
             return queryResponse;
         }
 
-        public static void ReadSqsItems()
+        public static Task<SubscribeResponse> SubscribeToSnsTopic(string queryUrl)
         {
             string topicArn = "arn:aws:sns:eu-west-2:099421490492:GasMonitoring-snsTopicSensorDataPart1-1YOM46HA51FB";
-            SubscribeRequest subscribeRequest = new SubscribeRequest(topicArn, "https", "name@example.com");
+            AmazonSimpleNotificationServiceClient snsClient = new AmazonSimpleNotificationServiceClient();
+            SubscribeRequest subscribeRequest = new SubscribeRequest(topicArn, "https", queryUrl); 
+            var snsSubscribeResponse = snsClient.SubscribeAsync(subscribeRequest);
+            return snsSubscribeResponse;
         }
+        
+        //delete the queue
     }
 }
