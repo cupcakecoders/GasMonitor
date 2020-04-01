@@ -12,7 +12,6 @@ namespace GasMonitor
     {
         static void Main(string[] args)
         {
-            var s3Client = new AmazonS3Client(Environment.GetEnvironmentVariable("AWS_ACCESS_KEY_ID"), Environment.GetEnvironmentVariable("AWS_SECRET_KEY_ID"), RegionEndpoint.EUWest2);
             var sqsClient = new AmazonSQSClient(Environment.GetEnvironmentVariable("AWS_ACCESS_KEY_ID"), Environment.GetEnvironmentVariable("AWS_SECRET_KEY_ID"), RegionEndpoint.EUWest2);
             var snsClient = new AmazonSimpleNotificationServiceClient(Environment.GetEnvironmentVariable("AWS_ACCESS_KEY_ID"), Environment.GetEnvironmentVariable("AWS_SECRET_KEY_ID"), RegionEndpoint.EUWest2);
             var sqsQueue = new SQSQueue(sqsClient);
