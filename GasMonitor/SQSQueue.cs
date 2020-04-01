@@ -20,9 +20,11 @@ namespace GasMonitor
             AmazonSQSClient sqsClient = new AmazonSQSClient();
             CreateQueueRequest createQueueRequest = new CreateQueueRequest();
             createQueueRequest.QueueName = "LocationSQSQueue";
+
             var createQueueResponse = sqsClient.CreateQueueAsync(createQueueRequest);
-            var queryResponse = createQueueResponse.Result.QueueUrl;
-            return queryResponse;
+            var queryUrl = createQueueResponse.Result.QueueUrl;
+            Console.WriteLine(queryUrl);
+            return queryUrl;
         }
 
         public static Task<SubscribeResponse> SubscribeToSnsTopic(string queryUrl)
@@ -31,9 +33,22 @@ namespace GasMonitor
             AmazonSimpleNotificationServiceClient snsClient = new AmazonSimpleNotificationServiceClient();
             SubscribeRequest subscribeRequest = new SubscribeRequest(topicArn, "https", queryUrl); 
             var snsSubscribeResponse = snsClient.SubscribeAsync(subscribeRequest);
+            Console.WriteLine(snsSubscribeResponse.ToString());
             return snsSubscribeResponse;
         }
-        
-        //delete the queue
+
+        public void RecieveMessageFromSQSQueue(Task snsSubscribeResponse, string queryUrl)
+        {
+            AmazonSQSClient sqsClient = new AmazonSQSClient();
+            ReceiveMessageRequest receiveMessageRequest = new ReceiveMessageRequest();
+            receiveMessageRequest.QueueUrl = queryUrl;
+            ReceiveMessageResponse receiveMessageResponse = 
+                sqsClient.ReceiveMessageAsync(receiveMessageRequest);
+        }
+
+        public void DeleteSqsQueue()
+        {
+            
+        }
     }
 }

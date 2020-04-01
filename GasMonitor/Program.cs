@@ -15,7 +15,7 @@ namespace GasMonitor
             
             foreach (var result in list)
             {
-                Console.WriteLine($"id:{result.Id}, {result.X}, {result.Y}");
+                Console.WriteLine($"Id:{result.Id}, X:{result.X}, Y:{result.Y}");
             }
         }
     }
