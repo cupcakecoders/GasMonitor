@@ -17,9 +17,12 @@
     <e p="C:\Users\KanDil\Documents\training\GasMonitor" t="IncludeFlat">
       <e p="GasMonitor" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="DuplicateChecker.cs" t="Include" />
         <e p="GasMonitor.csproj" t="IncludeRecursive" />
         <e p="Location.cs" t="Include" />
+        <e p="LocationChecker.cs" t="Include" />
         <e p="LocationService.cs" t="Include" />
+        <e p="MessageParser.cs" t="Include" />
         <e p="MessageProcessor.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -29,6 +32,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Reading.cs" t="Include" />
         <e p="SnsService.cs" t="Include" />
         <e p="SQSQueue.cs" t="Include" />
         <e p="SubscribedQueue.cs" t="Include" />
